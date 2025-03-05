@@ -5,17 +5,24 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>8 Наурыз Құттықтау</title>
+    <title>Рома ағаларыңнан</title>
     <style>
       
-
+      .scroll-container {
+    max-height: 1300px; /* Биіктігі 500px-ден аспайды */
+    overflow-y: auto; /* Ішінде скролл жасау */
+    border: 1px solid #ccc; /* Жақтау қосу (міндетті емес) */
+    padding: 10px;
+}
 
    
         body {
             text-align: center;
-            
+            height: 200vh;
             background-color: #ffe0f0;
             margin: 0;
+            overflow-y: scroll; /* Вертикаль скроллды мәжбүрлі қосу */
+
         }
 
         .container {
@@ -90,17 +97,26 @@
    
 </head>
 <body>
-
+    <div class="scroll-container">
     <div class="container">
         <h1>🌸 8 Наурыз құтты болсын! 🌸</h1>
         <p>
-          Арулар, көктемнің шуақты күніндей, күлімдеп жүре беріңіздер! Сіздердің нәзіктіктеріңіз бен мейірімдеріңіз әлемді көркейтіп, әр күнді ерекше етеді. Бақыт, махаббат, жетістік тілеймін! 💐✨
+          Арулар, көктемнің шуақты күніндей, күлімдеп жүре беріңіздер!
+         </p>
+        <p> 
+          Сіздердің нәзіктіктеріңіз бен мейірімдеріңіз әлемді көркейтіп,
+        </p>
+        <p>
+          әр күнді ерекше етеді. Бақыт, махаббат, жетістік тілеймін! 💐✨
         </p> 
         <p> 
-            Көтеріңкі көңіл-күй мен керемет сәттер көп болсын! Дей отырып сіздерді 06.03.2025 яғни бүгін Ауыз ашарға шақырамыз мекен-жайы құпия 
+            Көтеріңкі көңіл-күй мен керемет сәттер көп болсын!
+        </p> 
+        <p>
+           Дей отырып сіздерді 06.03.2025 яғни бүгін Ауыз ашарға шақырамыз мекен-жайы құпия 
         </p>
-        <p> </p>
-
+        
+  
         <!-- Слайд-шоу -->
         <div class="slideshow-container">
             <img class="slide active" src="img1.jpg" alt="Көктемгі гүлдер">
@@ -120,11 +136,12 @@
             <img class="slide" src="img16.jpg" alt="8 Наурыз сыйлықтары">
             <img class="slide" src="img13.jpg" alt="8 Наурыз сыйлықтары">
             <img class="slide" src="img18.jpg" alt="8 Наурыз сыйлықтары">
+            <img class="slide" src="img19.jpg" alt="8 Наурыз сыйлықтары">
+
         </div>
 
-       
-
-
+    </div>
+    </div>
     <script>
     
         // Слайд-шоуды автоматты ауыстыру
@@ -151,7 +168,7 @@
    
                const size = Math.random() * 20 + 10 + "px"; 
                const left = Math.random() * window.innerWidth + "px"; 
-               const duration = Math.random() * 5 + 5 + "s"; 
+               const duration = Math.random() * 5 + 2 + "s"; 
    
                snowflake.style.left = left;
                snowflake.style.fontSize = size;
@@ -173,7 +190,7 @@
 
             const size = Math.random() * 20 + 10 + "px"; 
             const left = Math.random() * window.innerWidth + "px"; 
-            const duration = Math.random() * 5 + 5 + "s"; 
+            const duration = Math.random() * 5 + 2 + "s"; 
 
             snowflake.style.left = left;
             snowflake.style.fontSize = size;
@@ -184,7 +201,7 @@
             }, parseInt(duration) * 1000);
         }
 
-        setInterval(createSnowflake, 200);</script>
+        setInterval(createSnowflake, 700);</script>
         <script>
             function createSnowflake() {
                 const snowflake = document.createElement("img");
@@ -192,9 +209,9 @@
                 snowflake.classList.add("snowflake");
                 document.body.appendChild(snowflake);
         
-                const size = Math.random() * 120 + 30 + "px"; 
+                const size = Math.random() * 20 + 10 + "px"; 
                 const left = Math.random() * window.innerWidth + "px"; 
-                const duration = Math.random() * 5 + 5 + "s"; 
+                const duration = Math.random() * 5 + 3 + "s"; 
         
                 snowflake.style.left = left;
                 snowflake.style.width = size;
@@ -206,7 +223,7 @@
                 }, parseInt(duration) * 1000);
             }
         
-            setInterval(createSnowflake, 200);
+            setInterval(createSnowflake, 700);
         
         </script>
         <script>
@@ -216,9 +233,9 @@
                 snowflake.classList.add("snowflake");
                 document.body.appendChild(snowflake);
         
-                const size = Math.random() * 80 + 30 + "px"; 
+                const size = Math.random() * 20 + 10 + "px"; 
                 const left = Math.random() * window.innerWidth + "px"; 
-                const duration = Math.random() * 5 + 5 + "s"; 
+                const duration = Math.random() * 5 + 2 + "s"; 
         
                 snowflake.style.left = left;
                 snowflake.style.width = size;
@@ -230,7 +247,7 @@
                 }, parseInt(duration) * 1000);
             }
         
-            setInterval(createSnowflake, 200);
+            setInterval(createSnowflake, 700);
         
         </script>
          <script>
@@ -240,9 +257,9 @@
                 snowflake.classList.add("snowflake");
                 document.body.appendChild(snowflake);
         
-                const size = Math.random() * 80 + 30 + "px"; 
+                const size = Math.random() * 20 + 10 + "px"; 
                 const left = Math.random() * window.innerWidth + "px"; 
-                const duration = Math.random() * 5 + 5 + "s"; 
+                const duration = Math.random() * 5 + 1 + "s"; 
         
                 snowflake.style.left = left;
                 snowflake.style.width = size;
@@ -254,7 +271,7 @@
                 }, parseInt(duration) * 1000);
             }
         
-            setInterval(createSnowflake, 200);
+            setInterval(createSnowflake, 700);
         
         </script>
          <script>
@@ -264,9 +281,9 @@
                 snowflake.classList.add("snowflake");
                 document.body.appendChild(snowflake);
         
-                const size = Math.random() * 90 + 30 + "px"; 
+                const size = Math.random() * 20 + 10 + "px"; 
                 const left = Math.random() * window.innerWidth + "px"; 
-                const duration = Math.random() * 5 + 5 + "s"; 
+                const duration = Math.random() * 5 + 1 + "s"; 
         
                 snowflake.style.left = left;
                 snowflake.style.width = size;
@@ -278,7 +295,7 @@
                 }, parseInt(duration) * 1000);
             }
         
-            setInterval(createSnowflake, 200);
+            setInterval(createSnowflake, 700);
         
         </script>
 </body>
