@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 Наурыз Құттықтау</title>
+    <style>
+      
+
+
+   
+        body {
+            text-align: center;
+            
+            background-color: #ffe0f0;
+            margin: 0;
+        }
+
+        .container {
+            position: relative;
+            padding: 50px;
+            z-index: 1; /* Контейнер элементінің z-index мәнін төмендету */
+        }
+
+        h1 { font-family: 'Pacifico', cursive; 
+            color: #d63384; }
+        p {  font-family: 'Pacifico', cursive;
+        font-size: 18px; }
+
+        /* Слайд-шоу стилі */
+        .slideshow-container {
+            position: relative;
+            max-width: 600px;
+            margin: auto;
+            z-index: 1; /* Слайд-шоу элементтерінің z-index мәнін төмендету */
+        }
+
+        .slide {
+            display: none;
+            width: 100%;
+        }
+
+        .active { display: block; }
+
+        /* Батырма стилі */
+        .btn {
+            padding: 10px 20px;
+            background-color: #d63384;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #ffe0f0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .container {
+            padding: 50px;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 { color: #d63384; }
+        p { font-size: 18px;color: #a7155e; }
+
+        /* Қар жауатын эффект */
+        .snowflake {
+            position: absolute;
+            top: -10px;
+            color: rgb(255, 36, 36);
+            font-size: 1em;
+            user-select: none;
+            z-index: 1000;
+            animation: snowfall linear infinite;
+        }
+
+        @keyframes snowfall {
+            0% { transform: translateY(0); opacity: 1; }
+            100% { transform: translateY(100vh); opacity: 0; }
+        }
+    </style>
+   
+</head>
+<body>
+
+    <div class="container">
+        <h1>🌸 8 Наурыз құтты болсын! 🌸</h1>
+        <p>
+          Арулар, көктемнің шуақты күніндей, күлімдеп жүре беріңіздер! Сіздердің нәзіктіктеріңіз бен мейірімдеріңіз әлемді көркейтіп, әр күнді ерекше етеді. Бақыт, махаббат, жетістік тілеймін! 💐✨
+        </p> 
+        <p> 
+            Көтеріңкі көңіл-күй мен керемет сәттер көп болсын! Дей отырып сіздерді 06.03.2025 яғни бүгін Ауыз ашарға шақырамыз мекен-жайы құпия 
+        </p>
+        <p> </p>
+
+        <!-- Слайд-шоу -->
+        <div class="slideshow-container">
+            <img class="slide active" src="img1.jpg" alt="Көктемгі гүлдер">
+            <img class="slide" src="img2.PNG" alt="Мерекелік кеш">
+            <img class="slide" src="img3.PNG" alt="8 Наурыз сыйлықтары">
+            <img class="slide" src="img17.jpg" alt="8 Наурыз сыйлықтары">
+            <img class="slide" src="img4.PNG" alt="8 Наурыз сыйлықтары">
+            <img class="slide" src="img5.PNG" alt="8 Наурыз сыйлықтары">
+            <img class="slide" src="img15.jpg" alt="8 Наурыз сыйлықтары">
+            <img class="slide" src="img6.PNG" alt="8 Наурыз сыйлықтары">
+            <img class="slide" src="img7.PNG" alt="8 Наурыз сыйлықтары">
+            <img class="slide" src="img8.PNG" alt="8 Наурыз сыйлықтары">
+            <img class="slide" src="img14.jpg" alt="8 Наурыз сыйлықтары">
+            <img class="slide" src="img10.PNG" alt="8 Наурыз сыйлықтары">
+            <img class="slide" src="img11.jpg" alt="8 Наурыз сыйлықтары">
+            <img class="slide" src="img12.jpg" alt="8 Наурыз сыйлықтары">
+            <img class="slide" src="img16.jpg" alt="8 Наурыз сыйлықтары">
+            <img class="slide" src="img13.jpg" alt="8 Наурыз сыйлықтары">
+            <img class="slide" src="img18.jpg" alt="8 Наурыз сыйлықтары">
+        </div>
+
+       
+
+
+    <script>
+    
+        // Слайд-шоуды автоматты ауыстыру
+        let slides = document.querySelectorAll(".slide");
+        let index = 0;
+
+        function showSlides() {
+            slides.forEach((slide, i) => {
+                slide.style.display = (i === index) ? "block" : "none";
+            });
+            index = (index + 1) % slides.length;
+        }
+
+        setInterval(showSlides, 1500);
+
+    </script>
+    <script>
+        function createSnowflake() {
+               const snowflake = document.createElement("div");
+               snowflake.classList.add("snowflake");
+               snowflake.innerHTML = "Құтты болсын";
+               
+               document.body.appendChild(snowflake);
+   
+               const size = Math.random() * 20 + 10 + "px"; 
+               const left = Math.random() * window.innerWidth + "px"; 
+               const duration = Math.random() * 5 + 5 + "s"; 
+   
+               snowflake.style.left = left;
+               snowflake.style.fontSize = size;
+               snowflake.style.animationDuration = duration;
+   
+               setTimeout(() => {
+                   snowflake.remove();
+               }, parseInt(duration) * 1000);
+           }
+   
+           setInterval(createSnowflake, 200);</script>
+<script>
+     function createSnowflake() {
+            const snowflake = document.createElement("div");
+            snowflake.classList.add("snowflake");
+            snowflake.innerHTML = "8 наурыз";
+            
+            document.body.appendChild(snowflake);
+
+            const size = Math.random() * 20 + 10 + "px"; 
+            const left = Math.random() * window.innerWidth + "px"; 
+            const duration = Math.random() * 5 + 5 + "s"; 
+
+            snowflake.style.left = left;
+            snowflake.style.fontSize = size;
+            snowflake.style.animationDuration = duration;
+
+            setTimeout(() => {
+                snowflake.remove();
+            }, parseInt(duration) * 1000);
+        }
+
+        setInterval(createSnowflake, 200);</script>
+        <script>
+            function createSnowflake() {
+                const snowflake = document.createElement("img");
+                snowflake.src = "ггг2.png"; // Суреттің атауын өзгерту керек
+                snowflake.classList.add("snowflake");
+                document.body.appendChild(snowflake);
+        
+                const size = Math.random() * 120 + 30 + "px"; 
+                const left = Math.random() * window.innerWidth + "px"; 
+                const duration = Math.random() * 5 + 5 + "s"; 
+        
+                snowflake.style.left = left;
+                snowflake.style.width = size;
+                snowflake.style.height = size;
+                snowflake.style.animationDuration = duration;
+        
+                setTimeout(() => {
+                    snowflake.remove();
+                }, parseInt(duration) * 1000);
+            }
+        
+            setInterval(createSnowflake, 200);
+        
+        </script>
+        <script>
+            function createSnowflake() {
+                const snowflake = document.createElement("img");
+                snowflake.src = "ггг.png"; // Суреттің атауын өзгерту керек
+                snowflake.classList.add("snowflake");
+                document.body.appendChild(snowflake);
+        
+                const size = Math.random() * 80 + 30 + "px"; 
+                const left = Math.random() * window.innerWidth + "px"; 
+                const duration = Math.random() * 5 + 5 + "s"; 
+        
+                snowflake.style.left = left;
+                snowflake.style.width = size;
+                snowflake.style.height = size;
+                snowflake.style.animationDuration = duration;
+        
+                setTimeout(() => {
+                    snowflake.remove();
+                }, parseInt(duration) * 1000);
+            }
+        
+            setInterval(createSnowflake, 200);
+        
+        </script>
+         <script>
+            function createSnowflake() {
+                const snowflake = document.createElement("img");
+                snowflake.src = "ггг3.png"; // Суреттің атауын өзгерту керек
+                snowflake.classList.add("snowflake");
+                document.body.appendChild(snowflake);
+        
+                const size = Math.random() * 80 + 30 + "px"; 
+                const left = Math.random() * window.innerWidth + "px"; 
+                const duration = Math.random() * 5 + 5 + "s"; 
+        
+                snowflake.style.left = left;
+                snowflake.style.width = size;
+                snowflake.style.height = size;
+                snowflake.style.animationDuration = duration;
+        
+                setTimeout(() => {
+                    snowflake.remove();
+                }, parseInt(duration) * 1000);
+            }
+        
+            setInterval(createSnowflake, 200);
+        
+        </script>
+         <script>
+            function createSnowflake() {
+                const snowflake = document.createElement("img");
+                snowflake.src = "ггг2.png"; // Суреттің атауын өзгерту керек
+                snowflake.classList.add("snowflake");
+                document.body.appendChild(snowflake);
+        
+                const size = Math.random() * 90 + 30 + "px"; 
+                const left = Math.random() * window.innerWidth + "px"; 
+                const duration = Math.random() * 5 + 5 + "s"; 
+        
+                snowflake.style.left = left;
+                snowflake.style.width = size;
+                snowflake.style.height = size;
+                snowflake.style.animationDuration = duration;
+        
+                setTimeout(() => {
+                    snowflake.remove();
+                }, parseInt(duration) * 1000);
+            }
+        
+            setInterval(createSnowflake, 200);
+        
+        </script>
+</body>
+</html>
